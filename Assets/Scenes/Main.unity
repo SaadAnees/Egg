@@ -378,6 +378,33 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 1
+--- !u!1 &809850081 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4156806021929885812, guid: 00d74b7f6a2f63348bd75a574c1d1e99,
+    type: 3}
+  m_PrefabInstance: {fileID: 5081081893467858128}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &809850083
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 809850081}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 63fece666b5c39c409a68335d4650975, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -615,6 +642,11 @@ PrefabInstance:
       objectReference: {fileID: 1710775295}
     - target: {fileID: 8459888347694187185, guid: 00d74b7f6a2f63348bd75a574c1d1e99,
         type: 3}
+      propertyPath: eggAnimator
+      value: 
+      objectReference: {fileID: 809850083}
+    - target: {fileID: 8459888347694187185, guid: 00d74b7f6a2f63348bd75a574c1d1e99,
+        type: 3}
       propertyPath: eggRenderer
       value: 
       objectReference: {fileID: 1978635979}
@@ -652,7 +684,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4156806021929885812, guid: 00d74b7f6a2f63348bd75a574c1d1e99,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 809850083}
   m_SourcePrefab: {fileID: 100100000, guid: 00d74b7f6a2f63348bd75a574c1d1e99, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
