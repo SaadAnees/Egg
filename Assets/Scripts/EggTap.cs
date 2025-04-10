@@ -9,11 +9,11 @@ public class EggTap : MonoBehaviour
     public Texture[] crackStages; // Assign 4 textures in the Inspector
     private int tapCount = 0;
 
-    private Renderer eggRenderer;
+    public Renderer eggRenderer;
 
     private void Start()
     {
-        eggRenderer = GetComponent<Renderer>();
+       // eggRenderer = GetComponent<Renderer>();
     }
 
     private void OnMouseDown()
@@ -27,6 +27,7 @@ public class EggTap : MonoBehaviour
             // Swap texture based on tap
             if (tapCount - 1 < crackStages.Length && eggRenderer != null)
             {
+               // Debug.Log("Swap texture");
                 eggRenderer.material.mainTexture = crackStages[tapCount - 1];
             }
         }
@@ -39,7 +40,7 @@ public class EggTap : MonoBehaviour
     void CrackOpen()
     {
         Instantiate(crackedEggPrefab, transform.position, transform.rotation);
-        Destroy(gameObject);
+        //Destroy(gameObject);
 
         if (character != null)
         {
