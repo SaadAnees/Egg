@@ -76,10 +76,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1e8b0e3f03e7c14a8f74d158314b0f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crackedEggPrefab: {fileID: 0}
+  crackedEggPrefab: {fileID: -7875726984644124103, guid: fd71ad6ebb2e2c546b8ee7678b1f2eca,
+    type: 3}
+  smokeEffectPrefab: {fileID: 1293630020605024, guid: ea309e8646148c24ab067d84d5d22697,
+    type: 3}
   character: {fileID: 0}
+  eggRenderer: {fileID: 195776966376227164}
+  eggAnimator: {fileID: 7865646242327685825}
+  eggCanvasGroup: {fileID: 0}
   tapsToCrack: 5
-  crackStages: []
+  eggRevealDelay: 1
+  crackStages:
+  - {fileID: 2800000, guid: 2727aa13afd3d0f48880f8b5469a21eb, type: 3}
+  - {fileID: 2800000, guid: cd1fdce6472cce6479624be258662d05, type: 3}
+  - {fileID: 2800000, guid: 1fc93aae6e3465948861339da5d4c5bf, type: 3}
+  - {fileID: 2800000, guid: 07653bfab3298be4ea12da07c98370b2, type: 3}
 --- !u!1001 &6802875350521819833
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -161,11 +172,48 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7478044779059139277, guid: c5a7de59a55ba4141a4c2c675ed8098c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7865646242327685825}
   m_SourcePrefab: {fileID: 100100000, guid: c5a7de59a55ba4141a4c2c675ed8098c, type: 3}
+--- !u!137 &195776966376227164 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 6692103904958755813, guid: c5a7de59a55ba4141a4c2c675ed8098c,
+    type: 3}
+  m_PrefabInstance: {fileID: 6802875350521819833}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3667092972964788942 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7821779174455543927, guid: c5a7de59a55ba4141a4c2c675ed8098c,
     type: 3}
   m_PrefabInstance: {fileID: 6802875350521819833}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &4156806021929885812 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7478044779059139277, guid: c5a7de59a55ba4141a4c2c675ed8098c,
+    type: 3}
+  m_PrefabInstance: {fileID: 6802875350521819833}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &7865646242327685825
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4156806021929885812}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 63fece666b5c39c409a68335d4650975, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
